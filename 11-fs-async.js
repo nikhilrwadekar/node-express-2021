@@ -35,3 +35,6 @@ readFile("./content/subfolder/first.txt", (err, result) => {
 });
 
 console.log("Starting next task.."); // sync vs async way for writing files.
+
+// Alternatives:
+// using Promises, async await
