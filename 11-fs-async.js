@@ -1,5 +1,5 @@
 const { readFile, writeFile } = require("fs");
-
+console.log("Start");
 // Sync style. Err, Results. Always!
 readFile("./content/subfolder/first.txt", (err, result) => {
   if (err) {
@@ -26,10 +26,12 @@ readFile("./content/subfolder/first.txt", (err, result) => {
           if (err) {
             console.log("Something went wrong with the callback hell.");
           } else {
-            console.log("Third file was created.");
+            console.log("Done with this task.");
           }
         }
       );
     }
   });
 });
+
+console.log("Starting next task.."); // sync vs async way for writing files.
