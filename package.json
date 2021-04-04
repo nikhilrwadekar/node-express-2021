@@ -1,0 +1,23 @@
+{
+  "name": "node-tutorial-04012021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1-intro.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikhilrwadekar/node-express-2021.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikhilrwadekar/node-express-2021/issues"
+  },
+  "homepage": "https://github.com/nikhilrwadekar/node-express-2021#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
