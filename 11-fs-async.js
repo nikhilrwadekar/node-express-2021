@@ -1,6 +1,6 @@
 const { readFile, writeFile } = require("fs");
 console.log("Start");
-// Sync style. Err, Results. Always!
+// Sync style. Err, Results. Always! (Ignore: the method; it's a callback hell; just for learning purposes)
 readFile("./content/subfolder/first.txt", (err, result) => {
   if (err) {
     console.log("Sorry, could not load file.");
