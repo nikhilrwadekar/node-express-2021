@@ -10,3 +10,8 @@ const { john, peter } = names;
 sayHi(john);
 sayHi(peter);
 // sayHi(nikhil);
+
+const data = require("./6-alternative-flavor");
+console.log(data);
+
+require("./7-mind-grenade")
