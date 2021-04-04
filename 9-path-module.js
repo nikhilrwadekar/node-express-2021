@@ -8,5 +8,5 @@ const base = path.basename(filePath);
 console.log(base);
 
 // Most used - environment agnostic!
-const absolute = path.resolve(__dirname, 'content', 'subfolder', 'text.txt');
+const absolute = path.resolve(__dirname, "content", "subfolder", "text.txt");
 console.log(absolute);

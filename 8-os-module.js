@@ -9,40 +9,40 @@ const systemUptimeInSeconds = os.uptime(); // Avoiding this as this assigns one 
 
 // Helper display function
 const formatTimeAsString = (number, unit) => {
-    return `${number} ${unit}`;
-}
+  return `${number} ${unit}`;
+};
 
 // Print System uptime every second
 setInterval(() => {
-    const uptimeSeconds = os.uptime();
-    const hours = parseInt(uptimeSeconds/60/60);
-    const minutes = parseInt(uptimeSeconds/60%60);
-    const seconds = uptimeSeconds%60;
+  const uptimeSeconds = os.uptime();
+  const hours = parseInt(uptimeSeconds / 60 / 60);
+  const minutes = parseInt((uptimeSeconds / 60) % 60);
+  const seconds = uptimeSeconds % 60;
 
-    let output = "";
+  let output = "";
 
-    if(hours) {
-        output += formatTimeAsString(hours, "hours");
-    }
+  if (hours) {
+    output += formatTimeAsString(hours, "hours");
+  }
 
-    if(minutes) {
-        output += " ";
-        output += formatTimeAsString(minutes, "minutes");
-    }
+  if (minutes) {
+    output += " ";
+    output += formatTimeAsString(minutes, "minutes");
+  }
 
-    if(seconds) {
-        output += " ";
-        output += formatTimeAsString(seconds, "seconds");
-    }
+  if (seconds) {
+    output += " ";
+    output += formatTimeAsString(seconds, "seconds");
+  }
 
-    console.log(output);
+  console.log(output);
 }, 1000);
 
 const currentOS = {
-    name: os.type(),
-    release: os.release(),
-    totalMem: os.totalmem(),
-    freeMem: os.freemem()
-}
+  name: os.type(),
+  release: os.release(),
+  totalMem: os.totalmem(),
+  freeMem: os.freemem(),
+};
 
 console.log(currentOS);

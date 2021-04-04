@@ -11,6 +11,6 @@ const nikhil = "Nikhil";
 // So if you add your variables to module.exports it should be accessible throughout the app;
 
 module.exports = {
-    john,
-    peter
+  john,
+  peter,
 };

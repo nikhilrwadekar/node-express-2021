@@ -19,16 +19,17 @@ readFile("./content/subfolder/first.txt", (err, result) => {
       console.log("File contents:" + result);
 
       const second = result;
-        writeFile(
-            "./content/result-async/third.txt",
-            "Here is the third file!",
-            (err, result) => {
-                if(err) {
-                    console.log("Something went wrong with the callback hell.")
-                } else {
-                    console.log("Third file was created.")
-                }
-            });
+      writeFile(
+        "./content/result-async/third.txt",
+        "Here is the third file!",
+        (err, result) => {
+          if (err) {
+            console.log("Something went wrong with the callback hell.");
+          } else {
+            console.log("Third file was created.");
+          }
+        }
+      );
     }
   });
 });
